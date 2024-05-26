@@ -1,0 +1,37 @@
+{
+    "data": {
+        "data_sign": "KSC",
+        "data_path_pre": "../../datasets/origin",
+        "generate_pos2d": "False",
+        "splite_data_way": "use_pixels_patch",
+        "patch_size": 15,
+        "num_classes": 13,
+
+        "batch_size": 100,
+        "channel_size": 176,
+        "high_size":512,
+        "wide_size": 614,
+
+        "pca_size": 50,
+        "embedding_dim": 128,
+        "cls_mode": "pooling"
+    },
+    "net": {
+        "att_heads": 20,
+        "heads_dim": 64,
+        "transf_depth": 2,
+        "conv_depth":2,
+        "mlp_head_dim": 64,
+        "dropout": 0.1
+    },
+    "train": {
+        "train_ratio": 0.20,
+        "use_val": "False",
+        "val_ratio": 0.1,
+        "epochs": 100,
+        "lr": 0.01,
+        "att_deep": 9,
+        "weight_decay": 1e-4,
+        "momentum" : 0.9
+    }
+}
